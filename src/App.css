@@ -1,38 +1,259 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+.ff {
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+  /* -------------------- Font-Size -------------------- */
+  --fs-xsm: 14px !important;
+  --fs-sm: 15px;
+  --fs-md: 18px;
+  --fs-lg: 19px;
+  --fs-xl: 26px;
+  --fs-2xl: 50px;
+  --fs-3xl: 60px;
+  /* ---------------------- Color ---------------------- */
+  --clr-gray: #727272;
+  --clr-blues: #0063a6;
+  --clr-orange: #f7931e;
+  /* ----------------- Background Color ----------------- */
+  --bg-orange: #f7931e;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fs_14 {
+  font-size: var(--fs-xsm) !important;
+}
+
+.fs_15 {
+  font-size: var(--fs-sm);
+}
+
+.fs_18 {
+  font-size: var(--fs-md);
+}
+
+.fs_19 {
+  font-size: var(--fs-lg);
+}
+
+.fs_26 {
+  font-size: var(--fs-xl);
+}
+
+.fs_50 {
+  font-size: var(--fs-2xl);
+}
+
+.fs_80 {
+  font-size: var(--fs-3xl);
+}
+
+.color_gray {
+  color: var(--clr-gray) !important;
+}
+
+.color_blue {
+  color: var(--clr-blues);
+}
+
+.color_orange {
+  color: var(--clr-orange);
+}
+
+.bg_orange {
+  background-color: var(--bg-orange) !important;
+}
+
+/* CUSTOM CSS */
+
+.custom_zindex {
+  z-index: 1234567;
+}
+
+.burger {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 30px;
+  width: 35px;
+}
+
+.burger div {
+  width: 35px;
+  height: 1px;
+  background-color: #f7931e;
+  border: 2px solid #f7931e;
+  transition: 0.3s;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.burger.active div:nth-child(1) {
+  transform: rotate(-42deg) translate(-6px, 6px);
+}
+
+.burger.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active div:nth-child(3) {
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #0063a6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1000;
+  transition: all 400ms ease-in-out;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .custom_container {
+    max-width: 1500px !important;
+    margin: 0 auto;
+    padding: 0 12px;
+  }
+  .custom_width {
+    width: 150px !important;
+  }
+  .custom_width1 {
+    max-width: 230px;
+  }
+}
+
+@media (min-width: 1640px) {
+  .custom_container {
+    max-width: 1800px !important;
+    margin: 0 auto;
+    padding: 0 12px;
+  }
+}
+@media (max-width: 1299px) {
+  :root {
+    /* -------------------- Font-Size -------------------- */
+    --fs-xsm: 14px !important;
+    --fs-sm: 12px;
+    --fs-md: 15px;
+    --fs-lg: 19px;
+    --fs-xl: 20px;
+    --fs-2xl: 40px;
+    --fs-3xl: 40px;
+    /* ---------------------- Color ---------------------- */
+    --clr-gray: #727272;
+    --clr-blues: #0063a6;
+    --clr-orange: #f7931e;
+    /* ----------------- Background Color ----------------- */
+    --bg-orange: #f7931e;
+  }
+}
+@media (max-width: 991px) {
+  .custom_width {
+    max-width: 140px !important;
+  }
+  .custom_width1 {
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navmanu {
+    display: block;
+  }
+
+  .d-lg-none {
+    display: none;
+  }
+
+  .sidebar {
+    width: 100%;
+    transition: all 400ms ease-in-out;
+  }
+  .custom_width1 {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    /* -------------------- Font-Size -------------------- */
+    --fs-xsm: 14px !important;
+    --fs-sm: 15px;
+    --fs-md: 15px;
+    --fs-lg: 19px;
+    --fs-xl: 18px;
+    --fs-2xl: 22px;
+    --fs-3xl: 30px;
+    /* ---------------------- Color ---------------------- */
+    --clr-gray: #727272;
+    --clr-blues: #0063a6;
+    --clr-orange: #f7931e;
+    /* ----------------- Background Color ----------------- */
+    --bg-orange: #f7931e;
+  }
+  .custom_width1 {
+    max-width: 100px;
+  }
+}
+.visa-slider-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.visa-slider {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  width: max-content;
+}
+
+.visa-logo {
+  padding: 0 15px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .visa-logo img {
+    width: 120px; /* Reduce logo size on smaller screens */
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .visa-slider {
+    animation-duration: 50s; /* Slow down the animation on mobile for better readability */
   }
 }
