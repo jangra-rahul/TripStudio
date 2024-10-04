@@ -25,7 +25,7 @@ const ChooseTripStudio = () => {
                     Experts Who Care
                   </h4>
                   <p className="mb-0 mt-2 color_gray ff fs_18">
-                    We’ve helped thousands of travelers achieve their USA dreams
+                    We’ve helped hundreds of travelers achieve their USA dreams
                   </p>
                 </div>
               </div>

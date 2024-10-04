@@ -91,7 +91,7 @@ const Discovery = () => {
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="d-flex align-items-center gap-2">
                         <img src={date_icon} alt="date_icon" />
-                        <p className="mb-0">October 18, 2024</p>
+                        <p className="mb-0">October 4, 2024</p>
                       </div>
                       <div className="d-flex align-items-center gap-2">
                         <img src={user_icon} alt="date_icon" />
@@ -120,7 +120,7 @@ const Discovery = () => {
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="d-flex align-items-center gap-2">
                         <img src={date_icon} alt="date_icon" />
-                        <p className="mb-0">October 18, 2024</p>
+                        <p className="mb-0">October 4, 2024</p>
                       </div>
                       <div className="d-flex align-items-center gap-2">
                         <img src={user_icon} alt="date_icon" />
@@ -149,7 +149,7 @@ const Discovery = () => {
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="d-flex align-items-center gap-2">
                         <img src={date_icon} alt="date_icon" />
-                        <p className="mb-0">October 18, 2024</p>
+                        <p className="mb-0">October 4, 2024</p>
                       </div>
                       <div className="d-flex align-items-center gap-2">
                         <img src={user_icon} alt="date_icon" />

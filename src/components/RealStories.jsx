@@ -552,14 +552,12 @@ const RealStories = () => {
                         cursor: "pointer",
                         position: "relative",
                       }}
-                      title="I can't thank you enough for helping me with my
-USA visa! I got my appointment in just 15 days, and you made everything so clear and easy. I really appreciate your support & services!"
+                      title="Client has called and asked to make few corrections so this is the corrected one. Please changed everywhere used. Sanjeev garg’s review"
                       className=" fs_18 text-white mt-3 mb-0 ff"
                     >
-                      I can't thank you enough for helping me with my USA visa!
-                      I got my appointment in just 15 days, and you made
-                      everything so clear and easy. I really appreciate your
-                      support & services!
+                      Client has called and asked to make few corrections so
+                      this is the corrected one. Please changed everywhere used.
+                      Sanjeev garg’s review
                     </p>
                     <a href="#contact_form">
                       <Button

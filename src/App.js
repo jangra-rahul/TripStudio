@@ -20,7 +20,7 @@ function App() {
       <ChooseTripStudio />
       <Steps />
       <Started />
-      <Discovery />
+      {/* <Discovery /> */}
       <Footer />
     </>
   );

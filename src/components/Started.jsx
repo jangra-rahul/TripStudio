@@ -23,10 +23,10 @@ const Started = () => {
 
     emailjs
       .sendForm(
-        "service_s31x1au",
-        "template_9edbfya",
+        "service_8j77cuu",
+        "template_5l0z20k",
         form.current,
-        "4qhx84p_HSFyuFRJc"
+        "gYLsIBeeF02wyEvxp"
       )
       .then(
         (result) => {
@@ -60,7 +60,7 @@ const Started = () => {
   };
 
   return (
-    <div id="contact_form" className="px-3 py-5">
+    <div id="contact_form" className="px-3 pt-5">
       <ToastContainer />
       <Container
         style={{ backgroundColor: "#273345" }}
@@ -101,10 +101,9 @@ const Started = () => {
                           Date of Travel
                         </label>
                         <input
-                          className="px-3 py-2 rounded-5 border-1 mt-2"
+                          className="px-3 w-100 py-2 rounded-5 border-1 mt-2"
                           type="date"
                           name="travel_date"
-                          required
                           value={formData.travel_date} // Bind state to input
                           onChange={handleChange} // Handle change
                         />
